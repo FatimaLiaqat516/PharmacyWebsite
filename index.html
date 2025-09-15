@@ -1,0 +1,190 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaydaMedix - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Basic Reset and Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #3d566e;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #ecf0f1;
+        }
+
+        /* MAIN CONTENT */
+        .main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+
+        .welcome-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3d566e;
+        }
+
+        .welcome-text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+        }
+
+        /* BUTTONS GRID */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .button-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .button-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .button-icon {
+            font-size: 2.5rem;
+            color: #b92930;
+            margin-bottom: 1rem;
+        }
+
+        .button-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #34495e;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            background-color: #3d566e;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #1f6391;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-clinic-medical logo-icon"></i>
+                <span class="logo-text">SaydaMedix</span>
+            </div>
+            <nav class="nav-links">
+                <a href="companies.html" class="nav-link">Companies</a>
+                <a href="medicines.html" class="nav-link">Medicines</a>
+                <a href="medicine-requests.html" class="nav-link">Medicine Requests</a>
+                <a href="sales.html" class="nav-link">Sales</a>
+                <a href="login.html" class="nav-link">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <h1 class="welcome-title">Welcome to SaydaMedix</h1>
+        <p class="welcome-text">Your comprehensive solution for managing pharmacy operations.</p>
+
+        <div class="button-grid">
+            <div class="button-card" onclick="location.href='companies.html'">
+                <i class="fas fa-building button-icon"></i>
+                <h3 class="button-title">Pharmaceutical Companies</h3>
+                <a href="companies.html" class="button-link">View Companies</a>
+            </div>
+            <div class="button-card" onclick="location.href='medicines.html'">
+                <i class="fas fa-pills button-icon"></i>
+                <h3 class="button-title">Medicines Inventory</h3>
+                <a href="medicines.html" class="button-link">View Medicines</a>
+            </div>
+            <div class="button-card" onclick="location.href='medicine-requests.html'">
+                <i class="fas fa-clipboard-list button-icon"></i>
+                <h3 class="button-title">Medicine Requests</h3>
+                <a href="medicine-requests.html" class="button-link">View Requests</a>
+            </div>
+            <div class="button-card" onclick="location.href='sales.html'">
+                <i class="fas fa-money-bill-wave button-icon"></i>
+                <h3 class="button-title">Sales Management</h3>
+                <a href="sales.html" class="button-link">View Sales</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
